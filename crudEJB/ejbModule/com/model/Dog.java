@@ -8,6 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="DOGS")
+
 public class Dog {
 	
 	@Id
