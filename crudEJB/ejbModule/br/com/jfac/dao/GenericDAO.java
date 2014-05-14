@@ -1,4 +1,4 @@
-package com.br.jfac.dao;
+package br.com.jfac.dao;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.br.jfac.model;
+package br.com.jfac.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
