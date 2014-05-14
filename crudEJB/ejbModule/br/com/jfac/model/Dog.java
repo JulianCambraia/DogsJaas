@@ -16,7 +16,7 @@ public class Dog {
 	
 	private String name;
 	
-	private String weight;
+	private double weight;
 
 	public int getId() {
 		return id;
@@ -34,11 +34,11 @@ public class Dog {
 		this.name = name;
 	}
 
-	public String getWeight() {
+	public double getWeight() {
 		return weight;
 	}
 
-	public void setWeight(String weight) {
+	public void setWeight(double weight) {
 		this.weight = weight;
 	}
 
