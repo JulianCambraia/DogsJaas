@@ -22,7 +22,7 @@ public class DogMB {
 	private static final String CREATE_DOG = "createDog";
 	private static final String DELETE_DOG = "deleteDog";
 	private static final String UPDATE_DOG = "updateDog";
-	private static final String LIST_ALL_DOG = "listaAllDogs";
+	private static final String LIST_ALL_DOG = "listAllDogs";
 	private static final String STAY_IN_THE_SAME_PAGE = null;
 	
 	private Dog dog;
