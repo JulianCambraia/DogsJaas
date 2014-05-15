@@ -29,7 +29,6 @@ public abstract class GenericDAO<T> {
 	
 	protected void delete(Object id, Class<T> classe) {
 		T entityToBeRemoved = em.getReference(classe, id);
-		
 		em.remove(entityToBeRemoved);
 	}
 	
