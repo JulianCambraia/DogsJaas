@@ -1,7 +1,7 @@
 package br.com.jfac.managedBeans;
 
 import javax.ejb.EJB;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
@@ -11,7 +11,7 @@ import br.com.jfac.facade.UserFacade;
 import br.com.jfac.model.User;
 
 @ManagedBean
-@RequestScoped
+@SessionScoped
 public class UserMB {
 	
 	private User user;
