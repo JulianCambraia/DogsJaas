@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import br.com.jfac.facade.UserFacade;
 import br.com.jfac.model.User;
 
-@ManagedBean
 @SessionScoped
+@ManagedBean
 public class UserMB {
 	
 	private User user;
