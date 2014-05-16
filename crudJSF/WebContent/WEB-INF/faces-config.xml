@@ -13,6 +13,12 @@
 	</navigation-rule>
 	<navigation-rule>
 		<navigation-case>
+			<from-outcome>listAllDogs</from-outcome>
+			<to-view-id>/pages/protected/user/listAllDogs.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<navigation-case>
 			<from-outcome>createDog</from-outcome>
 			<to-view-id>/pages/protected/admin/createDog.xhtml</to-view-id>
 			<redirect/>

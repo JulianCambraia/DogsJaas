@@ -22,7 +22,7 @@ public class DogMB {
 	private static final String CREATE_DOG = "createDog";
 	private static final String DELETE_DOG = "deleteDog";
 	private static final String UPDATE_DOG = "updateDog";
-	private static final String LIST_ALL_DOG = "listAllDogs";
+	private static final String LIST_ALL_DOGS = "listAllDogs";
 	private static final String STAY_IN_THE_SAME_PAGE = null;
 	
 	private Dog dog;
@@ -55,7 +55,7 @@ public class DogMB {
 		}
 		
 		sendInfoMessageToUser("Operação completada: Dados Atualizados.");
-		return LIST_ALL_DOG;
+		return LIST_ALL_DOGS;
 	}
 	
 	public String deleteDogStart() {
@@ -72,7 +72,7 @@ public class DogMB {
 		}
 		
 		sendInfoMessageToUser("Operação completada: Dados Atualizados.");
-		return LIST_ALL_DOG;
+		return LIST_ALL_DOGS;
 	}
 	
 	public String createDogStart() {
@@ -89,7 +89,11 @@ public class DogMB {
 		}
 		
 		sendInfoMessageToUser("Operação completada: Dados Atualizados.");
-		return LIST_ALL_DOG;
+		return LIST_ALL_DOGS;
+	}
+	
+	public String listAllDogs() {
+		return LIST_ALL_DOGS;
 	}
 	
 	private void sendInfoMessageToUser(String message) {

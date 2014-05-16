@@ -15,29 +15,29 @@
 	    	#{msgs.loginHello}: #{userMB.user.name} || 
 	    	<h:commandLink value="#{msgs.logout}" action="#{userMB.logOut()}" /> 
 	    </h3>
-	    <h:dataTable value="#{dogMB.allDogs}" var="dog" styleClass="table" headerClass="tableColumnsHeader" rowClasses="tableFirstLine,tableNextLine">
-	    	<h:column>
+	    <p:dataTable value="#{dogMB.allDogs}" var="dog" styleClass="table" headerClass="tableColumnsHeader" rowClasses="tableFirstLine,tableNextLine">
+	    	<p:column>
 	    		<f:facet name="header">#{msgs.dogName}</f:facet>
 	    		#{dog.name}
-	    	</h:column>
-	    	<h:column>
+	    	</p:column>
+	    	<p:column>
 	    		<f:facet name="header">#{msgs.dogWeight}</f:facet>
 	    		#{dog.weight}
-	    	</h:column>	
-	    	<h:column>
-	    		<h:panelGrid columns="2">
+	    	</p:column>	
+	    	<p:column>
+	    		<p:panelGrid columns="2">
 	    			<!-- Sempre salva o id em um Hidden quando estiver usando escopo de requisição -->
 	    			<h:inputHidden value="#{dog.id}" />
-	    			<h:commandButton action="#{dogMB.updateDogStart()}" value="#{msgs.update}" rendered="#{userMB.userAdmin}">
+	    			<p:commandButton action="#{dogMB.updateDogStart()}" value="#{msgs.update}" rendered="#{userMB.userAdmin}">
 	    				<f:setPropertyActionListener target="#{dogMB.dog}" value="#{dog}"/>
-	    			</h:commandButton>
-	    			<h:commandButton action="#{dogMB.deleteDogStart()}" value="#{msgs.delete}"  rendered="#{userMB.userAdmin}">
+	    			</p:commandButton>
+	    			<p:commandButton action="#{dogMB.deleteDogStart()}" value="#{msgs.delete}"  rendered="#{userMB.userAdmin}">
 	    				<f:setPropertyActionListener target="#{dogMB.dog}" value="#{dog}"/>
-	    			</h:commandButton>
-	    		</h:panelGrid>
-	    	</h:column>
-	    </h:dataTable>
-	    <h:commandButton action="createDog" value="#{msgs.create} #{msgs.dog}" />
+	    			</p:commandButton>
+	    		</p:panelGrid>
+	    	</p:column>
+	    </p:dataTable>
+	    <p:commandButton action="createDog" value="#{msgs.create} #{msgs.dog}" />
 	</h:form>
 </h:body>
 </html>
