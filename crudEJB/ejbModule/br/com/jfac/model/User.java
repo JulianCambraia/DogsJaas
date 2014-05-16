@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="USERS")
-@NamedQuery(name="User.findUserByEmail", query="select u from User u where u.email= :email")
+@NamedQuery(name="User.findUserByEmail", query="select u from User u where u.email = :email")
 public class User {
 	
 	public static final String FIND_BY_EMAIL="User.findUserByEmail";

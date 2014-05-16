@@ -53,7 +53,7 @@ public abstract class GenericDAO<T> {
 		
 		try {
 			Query query = em.createNamedQuery(namedQuery);
-			if (parameters != null && parameters.isEmpty()) {
+			if (parameters != null && !parameters.isEmpty()) {
 				populateQueryParameters(query, parameters);
 			}
 			
