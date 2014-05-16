@@ -17,33 +17,28 @@ public class DogFacadeImpl implements DogFacade {
 	@Override
 	public void save(Dog dog) {
 		isDogWithAllData(dog);
-		
 		dogDAO.save(dog);
-
 	}
 
 	@Override
 	public Dog update(Dog dog) {
-		// TODO Auto-generated method stub
-		return null;
+		isDogWithAllData(dog);
+		return dogDAO.update(dog);
 	}
 
 	@Override
 	public void delete(Dog dog) {
-		// TODO Auto-generated method stub
-
+		dogDAO.delete(dog);
 	}
 
 	@Override
 	public Dog find(int entityID) {
-		// TODO Auto-generated method stub
-		return null;
+		return dogDAO.find(entityID);
 	}
 
 	@Override
 	public List<Dog> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return dogDAO.findAll();
 	}
 
 	private void isDogWithAllData(Dog dog) {
