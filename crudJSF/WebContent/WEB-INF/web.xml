@@ -59,4 +59,9 @@
 	<security-role>
 		<role-name>USER</role-name>
 	</security-role>
+	
+	<error-page>
+    	<error-code>403</error-code>
+    	<location>/pages/public/AccessDenied.xhtml</location>
+  	</error-page>
 </web-app>
