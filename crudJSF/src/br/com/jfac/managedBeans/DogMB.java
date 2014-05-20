@@ -19,6 +19,7 @@ public class DogMB {
 	@EJB
 	private DogFacade dogFacade;
 	
+	private static final String MENU_GERAL = "menuGeral";
 	private static final String CREATE_DOG = "createDog";
 	private static final String DELETE_DOG = "deleteDog";
 	private static final String UPDATE_DOG = "updateDog";
@@ -96,6 +97,9 @@ public class DogMB {
 		return LIST_ALL_DOGS;
 	}
 	
+	public String exibeMenu() {
+		return MENU_GERAL;
+	}
 	private void sendInfoMessageToUser(String message) {
 		FacesContext context = getContext();
 		context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, message, message));
