@@ -6,6 +6,13 @@
     version="2.2">
     <navigation-rule>
     	<navigation-case>
+    		<from-outcome>menuGeral</from-outcome>
+    		<to-view-id>/pages/protected/user/mega-menu.xhtml</to-view-id>
+    		<redirect/>	
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<navigation-case>
     		<from-outcome>AccessDenied</from-outcome>
     		<to-view-id>/pages/public/login.xhtml</to-view-id>
     		<redirect/>	
@@ -17,6 +24,12 @@
 			<to-view-id>/pages/protected/user/listAllDogs.xhtml</to-view-id>
 			<redirect/> 
 		</navigation-case> 
+	</navigation-rule>
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>listAllUsers</from-outcome>
+			<to-view-id>/pages/protected/user/listAllUsers.xhtml</to-view-id>
+		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
 		<navigation-case>
@@ -41,6 +54,12 @@
 		<navigation-case>
 			<from-outcome>deleteDog</from-outcome>
 			<to-view-id>/pages/protected/admin/deleteDog.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>manager</from-outcome>
+			<to-view-id>/pages/protected/manager/AcessoDenied.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<application>
