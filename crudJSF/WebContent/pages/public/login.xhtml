@@ -9,20 +9,24 @@
 <h:head acceptcharset="ISO-8859-1">
 	<h:outputStylesheet library="css" name="custom.css" />
 </h:head>
-<h:body>
+<h:body styleClass="body">
 	<center>
 		<p>Login de acesso as páginas seguras:</p>
 		<h:form id="login" onsubmit="document.getElementById('login').action='j_security_check';" prependId="false">
+			<p:messages />
 			<p:messages layout="table" errorStyle="background: #AFEEEE;" infoStyle="background: #AFEEEE;" globalOnly="true" />
 			<p:panelGrid columns="2">
+				
 				<p:outputLabel value="Email:" />
-				<p:inputText id="j_username" name="j_username" size="60"  required="true" requiredMessage="Email obrigatório!"/>
+				<p:inputText id="j_username" name="j_username" size="60"  required="true" requiredMessage="#{msgs.loginEmailEmpty}"/>
+				
 				<p:outputLabel value="Password: " />
-				<p:password id="j_password" name="j_password"/>
-				<h:outputText value="" />
-				<p:panelGrid columns="1">
+				<p:password id="j_password" name="j_password" size="40"/>
+				<h:outputLabel value="" />
+				<p:panel style="text-align:center">
 					<p:commandButton type="submit" name="submit" value="Login" ajax="false"/>
-				</p:panelGrid>
+					<p:commandButton value="Limpar" type="reset" />
+				</p:panel>
 			</p:panelGrid>
 			<br />
 		</h:form>
