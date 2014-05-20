@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head acceptcharset="ISO-8859-1">
+	<h:outputStylesheet library="css" name="custom.css" />
+	<title>Erro 403</title>
+</h:head>
+
+<h:body styleClass="body">
+	<h:form>
+		<center>
+			<p:panelGrid columns="1" style="text-align:center;">
+				<h1>Acesso Negado - Ácesso permitido somente aos Gerentes</h1>
+				<p:commandLink value="Retornar" action="listAllDogs" />
+			</p:panelGrid>
+		</center>
+	</h:form>
+</h:body>
+</html>
