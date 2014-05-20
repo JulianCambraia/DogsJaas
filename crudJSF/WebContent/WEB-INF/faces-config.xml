@@ -4,6 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.java.sun.com/xml/ns/javaee http://xmlns.java.sun.com/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
+    <navigation-rule>
+    	<navigation-case>
+    		<from-outcome>AccessDenied</from-outcome>
+    		<to-view-id>/pages/public/login.xhtml</to-view-id>
+    		<redirect/>	
+    	</navigation-case>
+    </navigation-rule>
 	<navigation-rule>
 		<navigation-case>
 			<from-outcome>logout</from-outcome>
