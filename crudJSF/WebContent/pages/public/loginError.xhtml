@@ -7,9 +7,17 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-    <h:outputStylesheet library="css" name="custom.css" />
+	<h:outputStylesheet library="css" name="custom.css" />
 </h:head>
 <h:body>
-    #{msgs.loginErrorMessage}
+	<h:form>
+		<center>
+			<p:panelGrid columns="1" style="text-align:center;">
+				<h1>Acesso Negado</h1>
+		    	#{msgs.loginErrorMessage}
+			<p:commandLink value="Retornar" action="AccessDenied" />
+			</p:panelGrid>
+		</center>
+	</h:form>
 </h:body>
 </html>
