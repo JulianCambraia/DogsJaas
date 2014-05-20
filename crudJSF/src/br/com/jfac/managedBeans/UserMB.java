@@ -36,7 +36,7 @@ public class UserMB {
 	public String logOut() {
 		getRequest().getSession().invalidate();
 		
-		return "logout";
+		return "/pages/public/logout";
 	}
 	
 	private HttpServletRequest getRequest() {
