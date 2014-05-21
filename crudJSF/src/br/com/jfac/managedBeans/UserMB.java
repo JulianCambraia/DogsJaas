@@ -33,10 +33,14 @@ public class UserMB {
 		return getRequest().isUserInRole("ADMIN");
 	}
 	
+	public boolean isUserManager() {
+		return getRequest().isUserInRole("MANAGER");
+	}
+	
 	public String logOut() {
 		getRequest().getSession().invalidate();
 		
-		return "/pages/public/logout";
+		return "logout";
 	}
 	
 	private HttpServletRequest getRequest() {

@@ -45,12 +45,12 @@ public class MegaMenuBean {
 		
 		item = new MenuItem();
 		item.setValue("Gráficos");
-		item.setOutcome("manager");
+		item.setOutcome("manager.graficos3D");
 		cadAvancadoMenu.getChildren().add(item);
 		
 		item = new MenuItem();
 		item.setValue("Balancete Anual");
-		item.setOutcome("manager");
+		item.setOutcome("manager.balancete");
 		cadAvancadoMenu.getChildren().add(item);
 		
 		Submenu adminMenu = new Submenu();
