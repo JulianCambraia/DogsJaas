@@ -1,8 +1,12 @@
 package br.com.jfac.managedBeans;
 
+import java.awt.event.ActionEvent;
+
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UICommand;
+import javax.faces.component.UIComponent;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
@@ -39,7 +43,6 @@ public class UserMB {
 	
 	public String logOut() {
 		getRequest().getSession().invalidate();
-		
 		return "logout";
 	}
 	
