@@ -137,14 +137,12 @@ public class MegaMenuBean {
 		
 		Submenu logoutMenu = new Submenu();
 		logoutMenu.setLabel("Sair");
-		
 		Submenu exitMenu = new Submenu();
 		exitMenu.setLabel("Logout");
 		
 		item = new MenuItem();
 		item.setValue("Logout");
-		item.setOutcome("logout");
-		
+		item.setUrl("/pages/protected/user/logout.xhtml");
 		exitMenu.getChildren().add(item);
 		
 		Column logoutColuna1 = new Column();
